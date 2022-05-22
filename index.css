@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+
+.header_title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header_title .headers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 5px solid black;
+  width: 50px;
+  height: 50px;
+  margin: 0px 5px;
+  color: white;
+  -webkit-box-shadow: 5px 5px black;
+          box-shadow: 5px 5px black;
+}
+
+.header_title .headers:nth-child(1) {
+  background-color: #dd130c;
+}
+
+.header_title .headers:nth-child(2) {
+  background-color: #db610f;
+}
+
+.header_title .headers:nth-child(3) {
+  background-color: #bbda13;
+}
+
+.header_title .headers:nth-child(4) {
+  background-color: #12dad0;
+}
+
+.header_title .headers:nth-child(5) {
+  background-color: #1075d8;
+}
+
+.header_title .headers:nth-child(6) {
+  background-color: #0e13db;
+}
+
+.header_title .headers:nth-child(7) {
+  background-color: #de0fa8;
+}
+
+.header_title .headers:nth-child(8) {
+  background-color: #df0d41;
+}
+
+.header_title .headers:nth-child(even) {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.header_title .headers:nth-child(odd) {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.shouts {
+  background-color: white;
+  display: block;
+  margin: 50px auto 25px auto;
+  padding: 10px;
+  max-height: 50vh;
+  height: 100%;
+  width: 500px;
+  border: 5px solid black;
+  -webkit-box-shadow: 5px 5px black;
+          box-shadow: 5px 5px black;
+  overflow: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.shouts::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.shouts::-webkit-scrollbar-thumb {
+  background-color: #df0d41;
+  border-radius: 10px;
+}
+
+.shouts .card {
+  width: 100%;
+  padding: 10px 5px;
+}
+
+.shouts .card:not(:first-child) {
+  border-bottom: 4px solid black;
+}
+
+.shouts .card .datetime {
+  font-size: 0.7rem;
+}
+
+.shouts .card .username {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 10px 0 0 0;
+}
+
+.shouts .card .message {
+  font-size: 1.1rem;
+}
+
+.shouts .card:nth-child(even) {
+  background-color: #e0d4c5;
+}
+
+.send {
+  display: block;
+  width: 500px;
+  margin: auto;
+}
+
+.send form input[type=text], .send form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 4px solid black;
+  background-color: antiquewhite;
+  margin-bottom: 10px;
+}
+
+.send form button[type=submit] {
+  background-color: antiquewhite;
+  padding: 10px;
+  color: white;
+  background-color: #1075d8;
+  border: 5px solid black;
+  -webkit-box-shadow: 5px 5px black;
+          box-shadow: 5px 5px black;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  display: block;
+  margin: auto;
+}
+
+.send form button[type=submit]:hover {
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+/*# sourceMappingURL=index.css.map */
