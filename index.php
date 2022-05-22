@@ -38,8 +38,8 @@ if(mysqli_query($connection, $create_table)){
 }
 
 if(isset($_POST['username']) && isset($_POST['message'])){
-    $username = mysqli_real_escape_string($_POST['username']);
-    $message = mysqli_real_escape_string($_POST['message']);
+    $username = mysqli_real_escape_string($connection, $_POST['username']);
+    $message = mysqli_real_escape_string($connection, $_POST['message']);
 
     $send_message = "INSERT INTO $messages (`username`, `shout`) VALUES ('$username', '$message')";
 
